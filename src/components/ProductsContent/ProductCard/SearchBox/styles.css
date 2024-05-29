@@ -1,0 +1,13 @@
+
+
+.search-box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box-container .search-box{
+    margin-left: 1%;
+    padding: .5rem;
+    border-radius: 15px;
+}
