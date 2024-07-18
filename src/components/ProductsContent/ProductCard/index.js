@@ -1,5 +1,5 @@
 import { useState } from "react";
-import AxiosHook from "../../../hooks/AxiosHook";
+import useAxiosHook from "../../../hooks/useAxiosHook";
 import SearchBox from "./SearchBox";
 import FilterCards from "../../../hooks/FilterCards";
 import Card from "./Card";
@@ -9,7 +9,7 @@ import "./styles.css";
 
 
 const ProductCard = () =>{
-    const {getAxios} = AxiosHook("https://fakestoreapi.com/products");
+    const {getAxios} = useAxiosHook("https://fakestoreapi.com/products");
     const [searchText, setSearchText] = useState("");
     const Filtered = FilterCards(getAxios, searchText);
     

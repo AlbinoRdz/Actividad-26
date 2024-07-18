@@ -1,4 +1,6 @@
 import "./styles.css";
+import React from 'react'
+
 
 const Card = ({name, price, img, description}) => {
 
@@ -7,7 +9,7 @@ const Card = ({name, price, img, description}) => {
             <h1 className="card-name">{name}</h1>
             <img className="card-img" src={img} />
             <p className="card-text">{description}</p>
-            <span className="card-price">{price}</span>
+            <span className="card-price">${price}</span>
         </section>
     )
 }
